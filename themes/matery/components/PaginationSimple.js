@@ -27,10 +27,9 @@ const PaginationSimple = ({ page, totalPage }) => {
         legacyBehavior>
         <button
           rel="prev"
-          className={`${
-            currentPage === 1 ? 'opacity-20  bg-gray-200  text-gray-500 pointer-events-none ' : 'block text-white bg-indigo-700'
-          } duration-200 px-3.5 py-2 hover:border-black rounded-full`} >
-          <i className='fas fa-angle-left text-2xl'/>
+          className={`${currentPage === 1 ? 'opacity-20  bg-gray-200  text-gray-500 pointer-events-none ' : 'block text-white bg-amber-700'
+            } duration-200 px-3.5 py-2 hover:border-black rounded-full`} >
+          <i className='fas fa-angle-left text-2xl' />
         </button>
       </Link>
       <Link
@@ -42,11 +41,10 @@ const PaginationSimple = ({ page, totalPage }) => {
         legacyBehavior>
         <button
           rel="next"
-          className={`${
-            +showNext ? 'text-white bg-indigo-700 ' : ' opacity-20 bg-gray-200 text-gray-500 pointer-events-none '
-          } duration-200 px-4 py-2 hover:border-black rounded-full`}
+          className={`${+showNext ? 'text-white bg-amber-700' : ' opacity-20 bg-gray-200 text-gray-500 pointer-events-none '
+            } duration-200 px-4 py-2 hover:border-black rounded-full`}
         >
-          <i className='fas fa-angle-right text-2xl'/>
+          <i className='fas fa-angle-right text-2xl' />
         </button>
       </Link>
     </div>
